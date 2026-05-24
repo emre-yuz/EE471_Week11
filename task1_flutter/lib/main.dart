@@ -2,9 +2,11 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+
 void main() {
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 
 class MyAppState extends ChangeNotifier {
   var current = WordPair.random();
@@ -44,12 +47,12 @@ class MyAppState extends ChangeNotifier {
   }
 }
 
-// ...
 
 class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
+
 
 class _MyHomePageState extends State<MyHomePage> {
  
@@ -61,10 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
     switch (selectedIndex) {
       case 0:
         page = GeneratorPage();
-        break;
       case 1:
         page = FavoritesPage();
-        break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
     }  
@@ -107,6 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
 
 class GeneratorPage extends StatelessWidget {
   @override
@@ -152,6 +154,7 @@ class GeneratorPage extends StatelessWidget {
   }
 }
 
+
 class FavoritesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -179,6 +182,7 @@ class FavoritesPage extends StatelessWidget {
     );
   }
 }
+
 
 class BigCard extends StatelessWidget {
   const BigCard({

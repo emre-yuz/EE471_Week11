@@ -1,4 +1,4 @@
-# ee471_week11_wordgenerator
+# task1_flutter
 
 A new Flutter project.
 
